@@ -9,6 +9,8 @@ var generator = require('./lib/generator');
 program
     .version('1.0.0')
     .option('-c, --chars <$#@>', 'generate icons for custom characters (no seperator)')
+    .option('-d --double', 'generate all combination of characters of length 2')
+    .option('-s --square', 'generate square instead of circles')
     .parse(process.argv);
 
 // Developer didn't provide any custom characters?

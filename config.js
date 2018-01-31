@@ -6,8 +6,9 @@ module.exports = {
     },
     src: {
         svg: {
-            // Base SVG file containing '{x}' and '{c}' placeholders
-            basePath: 'src/svg/base.svg'
+            // Base SVG files containing '{x}' and '{c}' placeholders
+            circle: 'src/svg/circle.svg',
+            square: 'src/svg/square.svg'
         }
     },
     dist: {
