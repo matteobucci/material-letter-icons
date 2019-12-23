@@ -11,7 +11,7 @@ program
     .option('-c, --chars <$#@>', 'generate icons for custom characters (no seperator)')
     .option('-d --double', 'generate all combination of characters of length 2')
     .option('-s --square', 'generate square instead of circles')
-    .option('-c --color <color>', 'Generate same icon color')
+    .option('-o --onlycolor <onlycolor>', 'Generate same icon color')
     .parse(process.argv);
 
 // Developer didn't provide any custom characters?
@@ -26,8 +26,8 @@ else {
 }
 
 
-if(program.color){
-    log.info(`Generating icons with colo ${program.color}`);
+if(program.onlycolor){
+    log.info(`Generating icons with colo ${program.onlycolor}`);
 }
 
 // Generate the icons and export them to dist/
