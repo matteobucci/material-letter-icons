@@ -25,6 +25,11 @@ else {
     log.info('material-letter-icons', 'Generating icons for custom characters: ' + program.chars);
 }
 
+
+if(program.color){
+    log.info(`Generating icons with colo ${program.color}");
+}
+
 // Generate the icons and export them to dist/
 generator.generateIcons(program, function (err) {
     // Log errors
